@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ isset($data['title']) ? $data['title'] : '' }}</title>
+    <title>BIobest</title>
 
     {{-- Styles goes here --}}
+    <link rel="stylesheet" href="style.css">
 
-    @yield('styles')
 </head>
 <body>
+    @include('frontend.layouts.header')
+
     @yield('content')
 
-    {{-- Scripts goes here --}}
-
-    @yield('scripts')
 </body>
 </html>
